@@ -1,0 +1,16 @@
+
+
+<br>
+
+<h1> Listing des JOUEURS </h1>
+<hr>
+<div> 
+    <% @personne.each do |personne| %>
+        <hr>
+        <p>Prénom : <%= personne.prenom %> </p>
+        <p>Nom : <%= personne.nom %> </p>
+        <p>Profession : <%= personne.profession %> </p> 
+            <p> <%= link_to "Voir joueur", personne_path(personne) %> </p>
+            <p> <%= link_to "Nouveau joueur", new_personne_path(personne) %> </p>
+    <% end %>
+</div>

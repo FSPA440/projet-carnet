@@ -1,0 +1,36 @@
+<br>
+<h2> Inscrire un nouveau joueur <h2>
+
+<%= form_with model: @personne, local: true do |form| %>
+    <p>
+        <%= form.label :prenom %>
+        <%= form.text_field :prenom %>
+    </p>
+     <p>
+        <%= form.label :nom %>
+        <%= form.text_field :nom %>
+    </p>
+     <p>
+        <%= form.label :profession %>
+        <%= form.text_field :profession %>
+    </p>
+     <p>
+        <%= form.label :telephone %>
+        <%= form.text_field :telephone %>
+    </p>
+     <p>
+        <%= form.label :adresse %>
+        <%= form.text_field :adresse %>
+    </p>
+
+    <p>
+        <%= form.submit "Créer le Joueur" %>
+    </p>
+
+
+    <% end %>
+    
+
+
+
+
