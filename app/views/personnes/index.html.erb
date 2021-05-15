@@ -1,16 +1,20 @@
 
-
 <br>
 
 <h1> Listing des JOUEURS </h1>
-<hr>
+
 <div> 
     <% @personne.each do |personne| %>
         <hr>
         <p>Prénom : <%= personne.prenom %> </p>
         <p>Nom : <%= personne.nom %> </p>
-        <p>Profession : <%= personne.profession %> </p> 
+        <p>Profession : <%= personne.profession %> </p>
+        <p>telephone : <%= personne.telephone %> </p> 
+        <p>adresse : <%= personne.adresse %> </p>
             <p> <%= link_to "Voir joueur", personne_path(personne) %> </p>
             <p> <%= link_to "Nouveau joueur", new_personne_path(personne) %> </p>
+            <p> <%= link_to "Modifier joueur", edit_personne_path(personne) %> </p>
+            <p> <%= link_to "Supprimer joueur", personne_path(personne), method: :delete %> </p>
+
     <% end %>
 </div>

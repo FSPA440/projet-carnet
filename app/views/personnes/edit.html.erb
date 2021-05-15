@@ -1,6 +1,4 @@
-<br>
-<h2> Inscrire un nouveau joueur <h2>
-
+<h1> Modifier les coordonnées du joueur <h1>
 <%= form_with model: @personne, local: true do |form| %>
     <p>
         <%= form.label :prenom %>
@@ -24,10 +22,8 @@
     </p>
 
     <p>
-        <%= form.submit "Créer le Joueur" %>
+        <%= form.submit "Modifier le Joueur" %>
     </p>
 
 <% end %>
     
-
-
